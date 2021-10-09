@@ -8,9 +8,9 @@ import numpy
 # PREDICT = ORC()
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
-def upload_file():
-    return "hello"
+@app.route('/')
+def homepage():
+    return "<h1> hello<h1>"
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=8080)	
+	app.run(debug=True, port=8080)	
