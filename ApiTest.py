@@ -3,9 +3,9 @@ from flask import Flask, flash, request
 #from werkzeug.utils import secure_filename
 import cv2
 import numpy
-from model import ORC
+# from model import ORC
 
-PREDICT = ORC()
+# PREDICT = ORC()
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
